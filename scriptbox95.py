@@ -37,6 +37,7 @@ $$$$$$$  |\$$$$$$$\ $$ |      $$ |$$$$$$$  | \$$$$  |$$$$$$$  |\$$$$$$  |$$  /\$
 
 
 """
+os.system('cls||clear')
 print(go)
 time.sleep(2)
 print(con+"Setting up..")
@@ -46,9 +47,23 @@ import io
 import re
 import os
 from update import download_latest_release_repository
+import socket
+
+def is_connected():
+    time.sleep(2)
+    print(con+"Chacking For internet..")
+    try:
+        socket_client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        host = "www.google.com"
+        port = 80
+        socket_client.connect((host, port))
+        socket_client.close()
+        return True
+    
+    except Exception as e:
+        return False
+
 def setup():
-    os.system('cls||clear')
-    print(go)
     time.sleep(2)
     print(con+"Chacking For Updates..")
     from main.dta import version, getdata
@@ -61,13 +76,27 @@ def setup():
         print(con+"New version is ["+ver+']')
         print(con + "Updating..")
         download_latest_release_repository()
+        os.chdir('./main')
+        time.sleep(1)
+        print(con+"importing files..")
+        os.system('python3 compile.py')
+        print(con+"file imported..")
         print(con + "Successfully Updated")
         print(con + "please restart...")
     else:
         print(con+"Updated..")
+        time.sleep(2)
+        print(con+"Loading..")
+        time.sleep(2)
         os.chdir('./main')
         os.system('python3 main.py')
         #exec(open('main.py').read())
 
-setup()
+if is_connected():
+    print(con+"Connected to the internet")
+    time.sleep(2)
+    setup()
+else:
+    print(con+"Not connected to the internet")
+    print(con+"Try again..")
 #download_latest_release_repository('amdivyansh', 'scriptbox95_source_data', 'main')
