@@ -1,6 +1,6 @@
 <h1 align="center">scriptbox95</h1>
 <p align="center">     
-  <img src="https://img.shields.io/badge/Version-7.0.0-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-7.1.0-green?style=for-the-badge">
   <img src="http://img.shields.io/github/license/amdivyansh/scriptbox95?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/amdivyansh/scriptbox95?color=red&style=for-the-badge">
   <img src="https://img.shields.io/github/forks/amdivyansh/scriptbox95?color=teal&style=for-the-badge">
