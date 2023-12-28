@@ -18,8 +18,7 @@ cyan="\033[0;36m"
 bcyan="\033[1;36m"
 white="\033[0;37m"
 nc="\033[00m"
-version = str(3)
-con= f'\n{blue}Scriptbox95 con>>{white} '
+con= f'{bblue}$ {bblue}Scriptbox95{purple}@{bgreen}con ~{white} '
 go = f"""
 {green}                              $$\            $$\     $$\                                  $$$$$$\  $$$$$$$\  
                               \__|           $$ |    $$ |                                $$  __$$\ $$  ____| 
@@ -31,7 +30,7 @@ $$$$$$$  |\$$$$$$$\ $$ |      $$ |$$$$$$$  | \$$$$  |$$$$$$$  |\$$$$$$  |$$  /\$
 \_______/  \_______|\__|      \__|$$  ____/   \____/ \_______/  \______/ \__/  \__|       \______/  \______/ 
                                   $$ |                                                                       
                                   $$ |                                                                       
-                                  \__|                                        [{blue}console{yellow}]                 
+                                  \__|                                       {yellow} [{blue}console{yellow}]                 
 {yellow}                                                                              {cyan}[{blue}\x42\x79 {green}amdivyansh{cyan}]
 {white}
 
