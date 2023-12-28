@@ -2,6 +2,8 @@
 from colorama import Fore
 import os
 import time
+import sys
+from sys import version_info
 os.system('cls||clear')
 black="\033[0;30m"
 red="\033[0;31m"
@@ -38,8 +40,13 @@ $$$$$$$  |\$$$$$$$\ $$ |      $$ |$$$$$$$  | \$$$$  |$$$$$$$  |\$$$$$$  |$$  /\$
 """
 os.system('cls||clear')
 print(go)
+pyver = str(version_info)
 time.sleep(2)
 print(con+"Setting up..")
+print(con+"Python "+pyver)
+if version_info<(3,0,0):
+    print('[!] Please use Python 3. $ python3 scriptbox95.py')
+    sys.exit()
 import requests
 import zipfile
 import io
