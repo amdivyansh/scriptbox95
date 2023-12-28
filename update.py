@@ -4,6 +4,7 @@ import io
 import re
 import os
 import shutil
+import time
 def download_latest_release_repository():
     url = f"https://api.github.com/repos/amdivyansh/scriptbox95_source_data/releases/latest"
     #headers = {"Authorization": f"token {access_token}"}
@@ -26,9 +27,5 @@ def download_latest_release_repository():
         print(extracted_folder_name)
         # Rename the extracted folder to the new name
         os.rename(extracted_folder_name, 'main')
-        os.chdir('./main')
-        exec(open('compile.py').read())
-
-        print(f"Updated successfully")
     else:
         print(f"Failed to download repository. Status code: {response.status_code}")
