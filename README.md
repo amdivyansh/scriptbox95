@@ -1,6 +1,9 @@
 <h1 align="center">scriptbox95</h1>
+<p align="center">
+<img width="300" height="300" src="https://github.com/amdivyansh/scriptbox95/blob/41be77645ba8e66ef6a6489a328d972f62f95a7a/scriptbox95.png?raw=true">
+</p>
 <p align="center">     
-  <img src="https://img.shields.io/badge/Version-7.1.0-green?style=for-the-badge">
+  <img hight="100px" src="https://img.shields.io/badge/Version-7.1.0-green?style=for-the-badge">
   <img src="http://img.shields.io/github/license/amdivyansh/scriptbox95?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/amdivyansh/scriptbox95?color=red&style=for-the-badge">
   <img src="https://img.shields.io/github/forks/amdivyansh/scriptbox95?color=teal&style=for-the-badge">
